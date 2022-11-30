@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+</head>
+
+<body>
+    <!-- Cabeçalho e Menu de Navegação-->
+    <nav class="container-fluid" id="menu"></nav>
+    <!-- Fim do  Cabeçalho e Menu de Navegação-->
+
+    <main class="container">
+     <div class="container-form">
+            <nav class="container-fluid" id="menu-cartao"></nav>
+            <form class="formLogin" action="#" method="post">
+                <h1>Detalhes do Pagamento</h1>
+                <div class="wrapper">
+                    <div class="card-number">
+                        <label>Numero do Cartão:
+                            <input type="number" maxlength="17" placeholder="#### #### #### ####" />
+                        </label>
+                    </div>
+                    <label>Nome:
+                        <input type="text" name="" placeholder=""> <!-- arrumar -->
+                    </label>
+                    <label>Data de Vencimento:
+                        
+                        <input type="date" maxlength="4" class="date-number-field" placeholder="MM/YY" />
+                    </label>
+                    <label>Codigo de Segurança(CVV):
+                        
+                        <input type="password" maxlength="3" name="password" placeholder="xxx" value="" />
+                    </label>
+                    <button type="submit" class="submit-now-btn">
+                        Confirmar </button>
+
+                </div>
+                <section class="grid">
+                </section>
+            </form>
+            <!-- FRENTE O CARTAO -->
+            <div class="container-card">
+            <div class="credit-card">
+                <div class="credit-card-front">
+                    <div class="card-type">
+                        Cartão de Crédito
+                    </div>
+                    <div class="image">
+                        
+                    </div>
+                    <img class="flag" src="./visa-logo.png">
+                    <img src="/img/chip.png" alt="">
+
+                    <div class="card-number">
+                        #### #### #### ####
+                    </div>
+                    <div class="card-holder">
+                        Fulano de Tal
+                    </div>
+                    <div class="expiration">
+                        06/2021
+                    </div>
+                </div>
+                <div class="credit-card-back">
+                    <div class="stripe"></div>
+                    <div class="ccv-block">
+                        123
+                    </div>
+                    <div class="flag">
+                        <img class="flag" src="./visa-logo.png">
+                    </div>
+                </div>
+
+      <!-- FRENTE O CARTAO -->
+      
+            </div>
+            </div>
+
+        </div>
+    </main>
+    <script type="module" src="./js/formulario-pagamento.js"></script>
+</body>
+
+</html>
